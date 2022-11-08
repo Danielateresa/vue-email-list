@@ -20,8 +20,11 @@
     <body>
 
         <div id="app">
+            <h1>Lista email</h1>
             <ul>
-                <li v-for="(email,i) in emailList">
+                <li v-for="(email,i) in emailList" v-show="emailList.length==
+                    10"> <!-- Bonus -->
+
                     {{emailList[i]}}
                 </li>
             </ul>
